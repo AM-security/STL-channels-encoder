@@ -5,7 +5,7 @@ DESCRIPTION = 'An encoder package for STL files'
 LONG_DESCRIPTION = 'A package that makes it easy to encode data into covert channels of STL files'
 
 setup(
-    name="stl_covert_channels",
+    name="stlcovertchannels",
     version=VERSION,
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
