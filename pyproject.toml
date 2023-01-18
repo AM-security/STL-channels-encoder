@@ -5,7 +5,9 @@ pythonpath = [
 
 [tool.setuptools]
 py-modules = []
-packages = ["facet_ch_encoder", "vertex_ch_encoder"]
+
+[tool.setuptools.packages.find]
+where = ["facet_ch_encoder", "vertex_ch_encoder"]
 
 
 
