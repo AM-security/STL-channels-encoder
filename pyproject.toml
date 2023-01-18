@@ -3,11 +3,8 @@ pythonpath = [
   ".", "facet_ch_encoder", "vertex_ch_encoder"
 ]
 
-[tool.setuptools]
-py-modules = []
-
 [tool.setuptools.packages.find]
-where = ["facet_ch_encoder", "vertex_ch_encoder"]
+where = ["."]
 
 
 
