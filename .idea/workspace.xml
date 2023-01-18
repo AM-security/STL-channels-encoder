@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0e9d326-1752-421d-bde2-89a77860fa8a" name="Changes" comment="" />
+    <list default="true" id="f0e9d326-1752-421d-bde2-89a77860fa8a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/facet_ch_encoder/tests/facet_ch_encoder_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertex_ch_encoder/tests/vertex_ch_encoder_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EncodingDecodingFacetChTest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EncodingDecodingTest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FacetChannelEncoder/FacetChEncoderLib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FacetChannelEncoder/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VertexChannelEncoder/VertexChEncoderLib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VertexChannelEncoder/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingFacetsTest/bytes/original_sphere.STL" beforeDir="false" afterPath="$PROJECT_DIR$/facet_ch_encoder/tests/test_objects/bytes/original_sphere.STL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingFacetsTest/text/decoded/decoded_secret.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingFacetsTest/text/encoded/encoded_sphere.STL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingFacetsTest/text/original_sphere.STL" beforeDir="false" afterPath="$PROJECT_DIR$/facet_ch_encoder/tests/test_objects/text/original_sphere.STL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingFacetsTest/text/secret.txt" beforeDir="false" afterPath="$PROJECT_DIR$/facet_ch_encoder/tests/test_objects/text/secret.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingTest/base3/bitmap/bunny.STL" beforeDir="false" afterPath="$PROJECT_DIR$/vertex_ch_encoder/tests/test_objects/base2/bitmap/bunny.STL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingTest/base3/bitmap/decoded/decoded_secret.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/vertex_ch_encoder/tests/test_objects/base3/bitmap/decoded/decoded_secret.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingTest/base3/bitmap/encoded/encoded_bunny.STL" beforeDir="false" afterPath="$PROJECT_DIR$/vertex_ch_encoder/tests/test_objects/base3/bitmap/encoded/encoded_bunny.STL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingTest/base3/bitmap/secret.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/vertex_ch_encoder/tests/test_objects/base2/bitmap/secret.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingTest/base3/text/decoded/decoded_secret.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingTest/base3/text/encoded/encoded_sphere.STL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingTest/base3/text/original_sphere.STL" beforeDir="false" afterPath="$PROJECT_DIR$/vertex_ch_encoder/tests/test_objects/base3/text/original_sphere.STL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingTest/base3/text/secret.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vertex_ch_encoder/tests/test_objects/base2/text/secret.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingTest/bitmap/bunny.STL" beforeDir="false" afterPath="$PROJECT_DIR$/vertex_ch_encoder/tests/test_objects/base2/image/bunny.STL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingTest/bitmap/decoded/decoded_secret.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingTest/bitmap/encoded/encoded_bunny.STL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingTest/bitmap/secret.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/vertex_ch_encoder/tests/test_objects/base3/bitmap/secret.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingTest/image/bunny.STL" beforeDir="false" afterPath="$PROJECT_DIR$/vertex_ch_encoder/tests/test_objects/base3/bitmap/bunny.STL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingTest/image/decoded/decoded_secret.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingTest/image/elephant_secret.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/vertex_ch_encoder/tests/test_objects/base2/image/elephant_secret.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingTest/image/encoded/encoded_bunny.STL" beforeDir="false" afterPath="$PROJECT_DIR$/vertex_ch_encoder/tests/test_objects/base2/bitmap/encoded/encoded_bunny.STL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingTest/text/decoded/decoded_secret.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingTest/text/encoded/encoded_sphere.STL" beforeDir="false" afterPath="$PROJECT_DIR$/vertex_ch_encoder/tests/test_objects/base3/text/encoded/encoded_sphere.STL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/EncodingDecodingTest/text/secret.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vertex_ch_encoder/tests/test_objects/base3/text/secret.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,14 +59,120 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/alex/PycharmProjects/sanitizer-distinguisher"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alex/PycharmProjects/STL-channels-encoder&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vertex_ch_encoder/tests/test_objects/base2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for facet_ch_encoder_test.test_encode_decode_text">
+    <configuration name="Python tests for facet_ch_encoder_test.test_encode_decode_text" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="STL-channels-encoder" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/facet_ch_encoder/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;facet_ch_encoder_test.test_encode_decode_text&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for facet_ch_encoder.tests.facet_ch_encoder_test.test_encode_decode_text" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="STL-channels-encoder" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/facet_ch_encoder/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;facet_ch_encoder.tests.facet_ch_encoder_test.test_encode_decode_text&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for vertex_ch_encoder.tests.vertex_ch_encoder_test.test_encode_decode_bitmap_base_3" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="STL-channels-encoder" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/vertex_ch_encoder/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;vertex_ch_encoder.tests.vertex_ch_encoder_test.test_encode_decode_bitmap_base_3&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for vertex_ch_encoder.tests.vertex_ch_encoder_test.test_encode_decode_text_base_2" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="STL-channels-encoder" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;vertex_ch_encoder.tests.vertex_ch_encoder_test.test_encode_decode_text_base_2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for vertex_ch_encoder.tests.vertex_ch_encoder_test.test_encode_decode_text_base_2" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="STL-channels-encoder" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/vertex_ch_encoder/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;vertex_ch_encoder.tests.vertex_ch_encoder_test.test_encode_decode_text_base_2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for vertex_ch_encoder.tests.vertex_ch_encoder_test.test_encode_decode_text_base_3" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="STL-channels-encoder" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/vertex_ch_encoder/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;vertex_ch_encoder.tests.vertex_ch_encoder_test.test_encode_decode_text_base_3&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for facet_ch_encoder_test.test_encode_decode_text" />
+        <item itemvalue="Python tests.Python tests for facet_ch_encoder.tests.facet_ch_encoder_test.test_encode_decode_text" />
+        <item itemvalue="Python tests.Python tests for vertex_ch_encoder.tests.vertex_ch_encoder_test.test_encode_decode_text_base_2" />
+        <item itemvalue="Python tests.Python tests for vertex_ch_encoder.tests.vertex_ch_encoder_test.test_encode_decode_text_base_2" />
+        <item itemvalue="Python tests.Python tests for vertex_ch_encoder.tests.vertex_ch_encoder_test.test_encode_decode_bitmap_base_3" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,10 +182,26 @@
       <option name="presentableId" value="Default" />
       <updated>1673931461858</updated>
       <workItem from="1673931463071" duration="1223000" />
+      <workItem from="1673932961641" duration="926000" />
+      <workItem from="1674005798349" duration="1411000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/STL_channels_encoder$.coverage" NAME=" Coverage Results" MODIFIED="1674007152061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/facet_ch_encoder/tests" />
   </component>
 </project>
