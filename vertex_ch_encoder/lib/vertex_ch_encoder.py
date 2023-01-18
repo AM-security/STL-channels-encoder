@@ -29,7 +29,7 @@ class Facet:
         self.normal: Vertex = normal
 
     def RotateRight(self):
-        return str(float(self.x)) + " " + str(float(self.y)) + " " + str(float(self.z))
+        self.vertex_1, self.vertex_2, self.vertex_3 = self.vertex_3, self.vertex_1, self.vertex_2
 
     # Returns string representation of a facet
     def string(self) -> str:
@@ -80,6 +80,7 @@ class STLObject:
     def GetNextFacet(self):
         self.facet_idx += 1
         if self.facet_idx > len(self.facets) - 1:
+            print("error: reached the end of facets")
             return None
         current_facet = self.facets[self.facet_idx]
         return current_facet
