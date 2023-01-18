@@ -1,0 +1,21 @@
+VERSION = '0.0.1'
+
+[tool.pytest.ini_options]
+pythonpath = [
+  ".", "facet_ch_encoder", "vertex_ch_encoder"
+]
+
+[project]
+name = "stlcovertchannels"
+version = "0.0.1"
+authors = [
+  { name="Aleksandr Dolgavin", email="sanya554455@gmail.com" },
+]
+description = 'A package that makes it easy to encode data into covert channels of STL files'
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
