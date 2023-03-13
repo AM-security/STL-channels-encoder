@@ -241,7 +241,6 @@ class EncoderSTL:
         secret_bytes = open(fn_secret, "rb").read()
         secret_size: int = len(secret_bytes)
 
-
         carrier_capacity = 0
         if base == base2:
             carrier_capacity = self.carrier_stl.FacetsCount() / 8  # number of bytes
@@ -382,9 +381,15 @@ class EncoderSTL:
     def EncodeBytes(self, secret_bytes, base: str):
         for byte in secret_bytes:
             if base == base2:
-                self.EncodeByte(byte)
+                if isinstance(byte,int):  # if it's int, the byte is already converted to unicode, no need to convert again. But it can be string, in this case ord()
+                    self.EncodeByte(byte)
+                else:
+                    self.EncodeByte(ord(byte))
             if base == base3:
-                self.EncodeByteBase3(ord(byte))
+                if isinstance(byte, int): # if it's int, the byte is already converted to unicode, no need to convert again. But it can be string, in this case ord()
+                    self.EncodeByteBase3(byte)
+                else:
+                    self.EncodeByteBase3(ord(byte))
 
     def WriteAll1(self):
         while True:
