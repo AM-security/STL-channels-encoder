@@ -137,16 +137,14 @@ class DecoderSTL:
         self.SaveDecodedSecretInFile(secret_msg, fn_secret_destination)
         print('    Decoding successful')
 
-    def DecodeBytesFromSTL(self, base: str) -> bytes:
+    def DecodeBytesFromSTL(self, base: str) -> list[int]:
         print('DecodeFileFromSTL')
         print('    Carrier ...: ' + self.fn_encoded_stl)
 
         secret_size = self.DecodeSize(base)
         secret_msg = self.DecodeBytes(secret_size, base)
-        secret_msg = bytes(secret_msg)
 
         print('    Decoded ...: ' + str(len(secret_msg)) + ' Bytes')
-        print('    Decoded MD5: ' + hashlib.md5(secret_msg).hexdigest())
         print('    Decoding successful')
         return secret_msg
 
@@ -243,6 +241,7 @@ class EncoderSTL:
         secret_bytes = open(fn_secret, "rb").read()
         secret_size: int = len(secret_bytes)
 
+
         carrier_capacity = 0
         if base == base2:
             carrier_capacity = self.carrier_stl.FacetsCount() / 8  # number of bytes
@@ -282,7 +281,8 @@ class EncoderSTL:
 
 
         print('    Secret ...: ' + ' (' + str(secret_size) + ' Bytes)')
-        print('    Secret MD5: ' + hashlib.md5(secret_bytes).hexdigest())
+        if base != base3:
+            print('    Secret MD5: ' + hashlib.md5(secret_bytes).hexdigest())
 
         if carrier_capacity >= secret_size + 4:
             self.EncodeSize(secret_size, base)
@@ -384,7 +384,7 @@ class EncoderSTL:
             if base == base2:
                 self.EncodeByte(byte)
             if base == base3:
-                self.EncodeByteBase3(byte)
+                self.EncodeByteBase3(ord(byte))
 
     def WriteAll1(self):
         while True:
