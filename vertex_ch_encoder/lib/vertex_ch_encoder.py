@@ -281,7 +281,7 @@ class EncoderSTL:
 
         print('    Secret ...: ' + ' (' + str(secret_size) + ' Bytes)')
         if base != base3:
-            print('    Secret MD5: ' + hashlib.md5(secret_bytes).hexdigest())
+            print('    Secret MD5: ' + hashlib.md5(secret_bytes.encode('utf-8')).hexdigest())
 
         if carrier_capacity >= secret_size + 4:
             self.EncodeSize(secret_size, base)
