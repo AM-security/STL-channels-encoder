@@ -2,8 +2,6 @@
 
 ## Library that steganographically encodes data into covert channels of STL files. 
 
-## The library makes it easy to encode data into covert channels of STL files
-
 ### Run tests:
 
     cd facet_ch_encoder/tests && pytest -q facet_ch_encoder_test.py
