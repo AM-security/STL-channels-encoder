@@ -1,4 +1,6 @@
-# STL-channels-encoder
+# STL Stego Channels Encoder
+
+## Library that steganographically encodes data into covert channels of STL files. 
 
 ## The library makes it easy to encode data into covert channels of STL files
 
