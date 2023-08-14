@@ -10,4 +10,3 @@
 ## Notes:
     Unicode is supported only for DecodeBytesFromSTL and EncodeBytesToSTL
     Not for DecodeFileFromSTL and EncodeFileToSTL!
-    And only for vertex channel
