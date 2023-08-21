@@ -6,8 +6,6 @@ pythonpath = [
 [tool.setuptools.packages.find]
 where = ["."]
 
-
-
 [project]
 name = "stlcovertchannels"
 version = "0.0.1"

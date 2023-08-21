@@ -4,7 +4,7 @@
 
 ### Run tests:
 
-    cd facet_ch_encoder/tests && pytest -q facet_ch_encoder_test.py
+    cd facet_ch_encoder/tests && pytest -q facet_ch_encoder_test.py # Or python -m pytest
     cd vertex_ch_encoder/tests && pytest -q vertex_ch_encoder_test.py 
 
 ## Notes:
