@@ -10,3 +10,15 @@
 ## Notes:
     Unicode is supported only for DecodeBytesFromSTL and EncodeBytesToSTL
     Not for DecodeFileFromSTL and EncodeFileToSTL!
+
+
+# build the package (for developers)
+https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+python3 -m pip install --upgrade build
+python3 -m build
+python3 -m pip install --upgrade twine
+python3 -m twine upload --repository testpypi dist/*
+
+# install this package
+python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps example-package-YOUR-USERNAME-HERE
