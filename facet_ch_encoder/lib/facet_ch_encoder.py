@@ -221,7 +221,6 @@ class EncoderSTL:
         print('Capacity:...... ' + str(carrier_capacity * 8) + ' bits (' + str(int(carrier_capacity)) + ' Bytes)')
 
         print('    Secret ...: ' + fn_secret + ' (' + str(secret_size) + ' Bytes)')
-        print('    Secret MD5: ' + hashlib.md5(secret_bytes).hexdigest())
 
         if carrier_capacity >= secret_size + 4:
             self.EncodeSize(secret_size)
@@ -244,7 +243,6 @@ class EncoderSTL:
         print('Capacity:...... ' + str(carrier_capacity * 8) + ' bits (' + str(int(carrier_capacity)) + ' Bytes)')
 
         print('    Secret ...: ' + ' (' + str(secret_size) + ' Bytes)')
-        print('    Secret MD5: ' + hashlib.md5(secret_bytes).hexdigest())
         if carrier_capacity >= secret_size + 4:
             self.EncodeSize(secret_size)
             self.EncodeBytes(secret_bytes)

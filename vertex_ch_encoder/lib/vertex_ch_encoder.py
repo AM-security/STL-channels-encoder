@@ -18,7 +18,7 @@ class Vertex:
 
     # Returns string representation of a vertex
     def string(self) -> str:
-        return self.x + " " + self.y + " " + self.z
+        return str(float(self.x)) + " " + str(float(self.y)) + " " + str(float(self.z))
 
 
 class Facet:
@@ -80,7 +80,7 @@ class STLObject:
     def GetNextFacet(self):
         self.facet_idx += 1
         if self.facet_idx > len(self.facets) - 1:
-            print("error: reached the end of facets")
+            print("reached the end of facets")
             return None
         current_facet = self.facets[self.facet_idx]
         return current_facet
@@ -251,7 +251,6 @@ class EncoderSTL:
 
 
         print('    Secret ...: ' + fn_secret + ' (' + str(secret_size) + ' Bytes)')
-        print('    Secret MD5: ' + hashlib.md5(secret_bytes).hexdigest())
 
         if carrier_capacity >= secret_size + 4:
             self.EncodeSize(secret_size, base)
@@ -280,8 +279,6 @@ class EncoderSTL:
 
 
         print('    Secret ...: ' + ' (' + str(secret_size) + ' Bytes)')
-        if base != base3:
-            print('    Secret MD5: ' + hashlib.md5(secret_bytes.encode('utf-8')).hexdigest())
 
         if carrier_capacity >= secret_size + 4:
             self.EncodeSize(secret_size, base)
@@ -398,6 +395,19 @@ class EncoderSTL:
                 return
             self.EncodeBit(facet, 1)
 
+    def RoundUpVertex(self, v: Vertex, decimals_number: int):
+        v.x = str(round(float(v.x), decimals_number)) # 10 ^ scale_factor
+        v.y = str(round(float(v.y), decimals_number))
+        v.z = str(round(float(v.z), decimals_number))
+    def RoundUpSTL(self, decimals: int):
+        while True:
+            facet = self.carrier_stl.GetNextFacet()
+            if facet is None:
+                return
+            self.RoundUpVertex(facet.vertex_1, decimals)
+            self.RoundUpVertex(facet.vertex_2, decimals)
+            self.RoundUpVertex(facet.vertex_3, decimals)
+            self.RoundUpVertex(facet.normal, decimals)
     def SaveEncodedSTL(self, fn_destination):
         file = open(fn_destination, "w")
         file.write(self.carrier_stl.string())

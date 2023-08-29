@@ -4,7 +4,7 @@ from vertex_ch_encoder.lib.vertex_ch_encoder import EncoderSTL, DecoderSTL, base
 
 # Test text. infiltrating secret.txt into sphere stl file
 def test_encode_decode_text_base_2():
-    encoder = EncoderSTL("test_objects/base3/text/original_sphere.STL", False)  # carrier's filepath
+    encoder = EncoderSTL("test_objects/base2/text/original_sphere.STL", False)  # carrier's filepath
     encoder.EncodeFileInSTL("test_objects/base2/text/secret.txt",  # secret's path
                             "test_objects/base2/text/encoded/encoded_sphere.STL",
                             base2)  # path to save the carrier with secret
@@ -17,6 +17,17 @@ def test_encode_decode_text_base_2():
     secret = open("test_objects/base2/text/decoded/decoded_secret.txt", "r").read()
 
     assert secret == "This is the secret message!"
+
+# Test scaling up
+def test_scaling_up_sphere():
+    encoder = EncoderSTL("test_objects/base2/scaleup/original_sphere.STL", False)  # carrier's filepath
+    # canonical - get rid of scientific notation
+    encoder.WriteAll1()
+    encoder.SaveEncodedSTL("test_objects/base2/scaleup/original_sphere.STL")
+
+    scaler = EncoderSTL("test_objects/base2/scaleup/original_sphere.STL", False)
+    scaler.RoundUpSTL(3)
+    scaler.SaveEncodedSTL("test_objects/base2/scaleup/scaledup_sphere.STL")
 
 
 # Test image. infiltrating elephant_secret.jpeg into bunny stl file

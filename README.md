@@ -18,7 +18,7 @@ https://packaging.python.org/en/latest/tutorials/packaging-projects/
 python3 -m pip install --upgrade build
 python3 -m build
 python3 -m pip install --upgrade twine
-python3 -m twine upload --repository testpypi dist/*
+python3 -m twine upload --skip-existing --repository testpypi dist/* 
 
 # install this package
-python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps example-package-YOUR-USERNAME-HERE
+python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps stlcovertchannels
